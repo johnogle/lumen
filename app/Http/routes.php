@@ -11,6 +11,11 @@
 |
 */
 
-$app->get('/', function() use ($app) {
+/*$app->get('/', function() use ($app) {
     return $app->welcome();
+});
+*/
+
+$app->get('/', function()  {
+    return 'Suky 19 Jun';
 });
