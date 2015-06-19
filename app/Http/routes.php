@@ -22,12 +22,14 @@ class Flower extends Illuminate\Database\Eloquent\Model {
 
 }
 
-$app->get('/', function() use ($app) {
+$app->get('create/{type}', function($type) use ($app) {
 
+
+	
 	$flower = new Flower;
-	$flower->type = "daisy";
+	$flower->type = $type;
 	$flower->save();
 	
 
-    return 'flower (maybe) saved Suky 19 Jun PM';
+    return 'flower type:' .$type. ' (maybe) saved Suky 19 Jun PM';
 });
