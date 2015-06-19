@@ -22,7 +22,7 @@ class Flower extends Illuminate\Database\Eloquent\Model {
 
 }
 
-$app->get('/', function()  {
+$app->get('/', function() use ($app) {
 
 	$flower = new Flower;
 	$flower->type = "daisy";
