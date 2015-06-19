@@ -33,3 +33,8 @@ $app->get('create/{type}', function($type) use ($app) {
 
     return 'flower type:' .$type. ' (maybe) saved Suky 19 Jun PM';
 });
+
+$app->get('flower/{id}', function($id) {
+
+	return Flower::findOrFail($id);
+});
