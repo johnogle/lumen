@@ -16,6 +16,18 @@
 });
 */
 
+class Flower extends Illuminate\Database\Eloquent\Model {
+
+
+
+}
+
 $app->get('/', function()  {
-    return 'Suky 19 Jun PM';
+
+	$flower = new Flower;
+	$flower->type = "daisy";
+	$flower->save();
+	
+
+    return 'flower saved Suky 19 Jun PM';
 });
