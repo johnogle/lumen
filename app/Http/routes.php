@@ -24,10 +24,10 @@ class Flower extends Illuminate\Database\Eloquent\Model {
 
 $app->get('/', function() use ($app) {
 
-	$flower = new Flower;
-	$flower->type = "daisy";
-	$flower->save();
+//	$flower = new Flower;
+//	$flower->type = "daisy";
+//	$flower->save();
 	
 
-    return 'flower saved Suky 19 Jun PM';
+    return 'flower (not) saved Suky 19 Jun PM';
 });
